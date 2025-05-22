@@ -38,8 +38,3 @@ jobs:
       - name: Run tests with coverage
         run: |
           uv run make coverage
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
